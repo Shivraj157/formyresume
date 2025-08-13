@@ -30,21 +30,11 @@ jobs:
 
           aws-region: us-east-1
 
-      # 1) Sync everything except CI files (this will create assets/ paths in S3)
-
       - name: Sync site (assets, css, etc.)
 
         run: |
 
-          aws s3 sync . s3://myresumehostingforshivraj --delete \
-
-            --exclude ".git/*" \
-
-            --exclude ".github/*" \
-
-            --exclude ".gitignore"
-
-      # 2) Push a no-cache index.html so browsers/CDN always fetch latest
+          aws s3 sync . s3://myresumehostingforshivraj --delete --exclude ".git/*" --exclude ".github/*" --exclude ".gitignore"
 
       - name: Upload index.html (no cache)
 
