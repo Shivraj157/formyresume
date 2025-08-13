@@ -22,27 +22,17 @@
 
 html,body{margin:0}
 
-body{
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:
 
-  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-
-  background: radial-gradient(1200px 800px at 85% -10%,#172031,#0c0f14 60%);
-
-  color:var(--ink); line-height:1.6;
-
-}
+radial-gradient(1200px 800px at 85% -10%,#172031,#0c0f14 60%);color:var(--ink);line-height:1.6}
 
 a{color:inherit}
 
 /* header */
 
-.header{
+.header{position:sticky;top:0;z-index:9;display:flex;gap:16px;align-items:center;justify-content:space-between;
 
-  position:sticky; top:0; z-index:9; display:flex; gap:16px; align-items:center; justify-content:space-between;
-
-  padding:14px 20px; background:rgba(15,20,27,.6); backdrop-filter:blur(10px); border-bottom:1px solid var(--border)
-
-}
+padding:14px 20px;background:rgba(15,20,27,.6);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
 
 .logo{font-weight:800;letter-spacing:.4px;text-decoration:none}
 
@@ -76,9 +66,7 @@ a{color:inherit}
 
 /* sections */
 
-.section{padding:34px 20px}
-
-.section h2{margin:0 0 16px;font-size:clamp(24px,3.5vw,34px)}
+.section{padding:34px 20px}.section h2{margin:0 0 16px;font-size:clamp(24px,3.5vw,34px)}
 
 .grid{display:grid;gap:18px}
 
@@ -88,15 +76,7 @@ a{color:inherit}
 
 /* cards */
 
-.card{
-
-  background:linear-gradient(180deg,#141a26,#0f141b);
-
-  border:1px solid var(--border); border-radius:16px; padding:18px;
-
-  box-shadow:0 10px 30px rgba(0,0,0,.25)
-
-}
+.card{background:linear-gradient(180deg,#141a26,#0f141b);border:1px solid var(--border);border-radius:16px;padding:18px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
 
 .meta{color:var(--muted);font-size:.95rem}
 
@@ -137,62 +117,6 @@ a{color:inherit}
 .accent{color:var(--accent)}
 
 ul.tight{margin:0 0 0 18px}
-
-/* ===== Certificates grid/cards ===== */
-
-.cert-grid {
-
-  display: grid;
-
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-
-  gap: 16px;
-
-}
-
-.cert-card {
-
-  display: grid;
-
-  grid-template-columns: 120px 1fr;
-
-  align-items: center;
-
-  gap: 14px;
-
-  padding: 14px;
-
-  background: linear-gradient(180deg,#141a26,#0f141b);
-
-  border: 1px solid var(--border);
-
-  border-radius: 12px;
-
-  text-decoration: none;
-
-  color: inherit;
-
-  transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
-
-  box-shadow: 0 10px 30px rgba(0,0,0,.25);
-
-}
-
-.cert-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.18); }
-
-.cert-card img {
-
-  width: 120px; height: 90px; object-fit: cover;
-
-  border-radius: 8px; border: 1px solid #2a3344;
-
-}
-
-.cert-info h3 { margin: 0 0 6px; font-size: 1.05rem; color: var(--ink); }
-
-.cert-info p  { margin: 0 0 8px; color: var(--muted); font-size: .95rem; }
-
-.cert-cta     { font-size: .9rem; color: #3ecf8e; }
 </style>
 </head>
 <body>
@@ -211,11 +135,9 @@ ul.tight{margin:0 0 0 18px}
 <p class="subtitle">Cyber Security Analyst • AWS Cloud • CI/CD</p>
 <p class="about">
 
-      Highly motivated and detail-oriented Cyber Security Analyst with hands-on experience in network security auditing,
+      Highly motivated and detail‑oriented Cyber Security Analyst with hands‑on experience in network security auditing,
 
-      incident response, penetration testing, and vulnerability assessment. Skilled in leveraging AWS services (IAM, EC2, S3, VPC, CloudFront)
-
-      for secure, scalable deployments with CI/CD. Certified AWS Cloud Practitioner and CEH v12.
+      incident response, penetration testing, and vulnerability assessment. Skilled in leveraging AWS services (IAM, EC2, S3, VPC, CloudFront) for secure, scalable deployments with CI/CD. Certified AWS Cloud Practitioner and CEH v12.
 </p>
 <div class="actions">
 <a class="btn" href="#projects">See Projects</a>
@@ -255,29 +177,12 @@ ul.tight{margin:0 0 0 18px}
 </div>
 </div>
 </section>
-<!-- Certificates section INSIDE the body -->
 <section id="certs" class="section wrap">
 <h2>Certifications</h2>
-<div class="cert-grid">
-<!-- CEH -->
-<a class="cert-card" href="assets/certificates/ceh-shivraj.jpg" target="_blank" rel="noopener">
-<img src="assets/certificates/ceh-shivraj.jpg" alt="EC-Council CEH Certificate">
-<div class="cert-info">
-<h3>Certified Ethical Hacker (CEH v12)</h3>
-<p>EC-Council · Issue: 21 May 2024 · Expiry: 20 May 2027</p>
-<span class="cert-cta">Open certificate ↗</span>
-</div>
-</a>
-<!-- AWS CCP -->
-<a class="cert-card" href="assets/certificates/aws-ccp-shivraj.jpg" target="_blank" rel="noopener">
-<img src="assets/certificates/aws-ccp-shivraj.jpg" alt="AWS Certified Cloud Practitioner Certificate">
-<div class="cert-info">
-<h3>AWS Certified Cloud Practitioner</h3>
-<p>AWS · Issue: 02 Aug 2025</p>
-<span class="cert-cta">Open certificate ↗</span>
-</div>
-</a>
-</div>
+<ul class="chips">
+<li class="chip">AWS Certified Cloud Practitioner</li>
+<li class="chip">CEH v12 (Certified Ethical Hacker)</li>
+</ul>
 </section>
 <section id="experience" class="section wrap">
 <h2>Experience</h2>
@@ -301,14 +206,14 @@ ul.tight{margin:0 0 0 18px}
 <ul class="tight">
 <li>Daily logs for workouts, steps, water, and calories</li>
 <li>Weekly summary & progress bars</li>
-<li>Responsive, semantic, framework-free UI</li>
+<li>Responsive, semantic, framework‑free UI</li>
 </ul>
 <p class="meta">HTML5, CSS3, Vanilla JS • S3 + CloudFront • CodePipeline → CodeBuild → S3 → Invalidation</p>
 <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span><span>AWS</span><span>CI/CD</span></div>
 </article>
 <article class="card">
-<h3>Vision-Based Mosquito Species Classification</h3>
-<p>Deep-learning classifier using CNNs to distinguish mosquito species from images.</p>
+<h3>Vision‑Based Mosquito Species Classification</h3>
+<p>Deep‑learning classifier using CNNs to distinguish mosquito species from images.</p>
 <div class="tags"><span>Python</span><span>DL</span><span>CNN</span></div>
 </article>
 </div>
@@ -323,6 +228,8 @@ ul.tight{margin:0 0 0 18px}
 <a class="contact-item" href="mailto:jadhav.shivraj13@gmail.com">jadhav.shivraj13@gmail.com</a>
 <a class="contact-item" href="tel:+918956540312">+91 89565 40312</a>
 <a class="contact-item" target="_blank" rel="noopener" href="https://www.linkedin.com/in/shivraj-jadhav-b23129229/">LinkedIn</a>
+<!-- Add GitHub when ready -->
+<!-- <a class="contact-item" target="_blank" rel="noopener" href="https://github.com/YOUR_GITHUB">GitHub</a> -->
 </div>
 </section>
 <footer class="footer">
