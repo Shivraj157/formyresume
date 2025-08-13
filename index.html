@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shivraj Jadhav — Cyber Security & AWS</title>
+<meta name="description" content="Portfolio of Shivraj Kashinath Jadhav — Cyber Security Analyst and AWS practitioner.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+
+:root{
+
+  --bg:#0c0f14; --panel:#0f141b; --elev:#121824; --border:#1d2430;
+
+  --ink:#e8edf5; --muted:#aeb8c7; --accent:#3ecf8e; --ring:rgba(62,207,142,.4);
+
+}
+
+*{box-sizing:border-box}
+
+html,body{margin:0}
+
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:
+
+radial-gradient(1200px 800px at 85% -10%,#172031,#0c0f14 60%);color:var(--ink);line-height:1.6}
+
+a{color:inherit}
+
+/* header */
+
+.header{position:sticky;top:0;z-index:9;display:flex;gap:16px;align-items:center;justify-content:space-between;
+
+padding:14px 20px;background:rgba(15,20,27,.6);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+
+.logo{font-weight:800;letter-spacing:.4px;text-decoration:none}
+
+.nav{display:flex;gap:12px;align-items:center}
+
+.nav a{color:var(--muted);text-decoration:none;padding:8px 10px;border-radius:8px}
+
+.nav a:hover{background:#151b27;color:var(--ink)}
+
+.cta{background:var(--accent);color:#0a1b14;font-weight:700;border-radius:10px}
+
+/* hero */
+
+.hero{padding:64px 20px 24px}
+
+.wrap{max-width:1080px;margin:0 auto}
+
+.hero h1{font-size:clamp(34px,5vw,56px);margin:0}
+
+.hero .subtitle{margin:6px 0 14px;color:var(--muted);font-weight:600}
+
+.hero .about{max-width:950px;color:#cbd5e1}
+
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:14px}
+
+.btn{display:inline-block;padding:12px 18px;border-radius:10px;background:var(--accent);color:#062213;font-weight:700;text-decoration:none}
+
+.btn.ghost{background:#151b27;color:var(--ink);border:1px solid var(--border)}
+
+.btn:focus{outline:3px solid var(--ring)}
+
+/* sections */
+
+.section{padding:34px 20px}.section h2{margin:0 0 16px;font-size:clamp(24px,3.5vw,34px)}
+
+.grid{display:grid;gap:18px}
+
+.skills{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+
+.cards{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+
+/* cards */
+
+.card{background:linear-gradient(180deg,#141a26,#0f141b);border:1px solid var(--border);border-radius:16px;padding:18px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+
+.meta{color:var(--muted);font-size:.95rem}
+
+.tags span{display:inline-block;padding:6px 10px;border:1px solid var(--border);border-radius:999px;margin:8px 6px 0 0;font-size:.9rem;color:#d5dde7}
+
+/* list chips */
+
+.chips{list-style:none;padding:0;margin:0;display:flex;gap:10px;flex-wrap:wrap}
+
+.chip{padding:8px 12px;border-radius:999px;background:#142118;color:#b6f3d3;border:1px solid #203a2a;font-weight:600}
+
+/* contact */
+
+.contact{background:radial-gradient(800px 400px at 12% 8%,#101724,transparent 60%)}
+
+.contact-grid{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+
+.contact-item{display:block;text-decoration:none;background:var(--elev);border:1px solid var(--border);padding:12px 14px;border-radius:12px}
+
+.contact-item:hover{background:#171e2b}
+
+/* mobile nav */
+
+.menu{display:none;background:none;border:none;color:var(--ink);font-size:22px}
+
+@media (max-width:880px){
+
+  .nav{position:absolute;top:64px;right:20px;background:#0d1117;border:1px solid var(--border);border-radius:12px;padding:10px;flex-direction:column;display:none}
+
+  .nav.open{display:flex}
+
+  .menu{display:block}
+
+}
+
+.footer{border-top:1px solid var(--border);text-align:center;color:var(--muted);padding:28px 20px}
+
+.accent{color:var(--accent)}
+
+ul.tight{margin:0 0 0 18px}
+</style>
+</head>
+<body>
+<header class="header">
+<a class="logo" href="#home">SJ</a>
+<nav id="nav" class="nav">
+<a href="#about">About</a><a href="#skills">Skills</a><a href="#certs">Certs</a>
+<a href="#experience">Experience</a><a href="#projects">Projects</a>
+<a href="#education">Education</a><a class="cta" href="#contact">Contact</a>
+</nav>
+<button class="menu" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+</header>
+<main id="home" class="hero">
+<div class="wrap">
+<h1>Shivraj <span class="accent">Kashinath</span> Jadhav</h1>
+<p class="subtitle">Cyber Security Analyst • AWS Cloud • CI/CD</p>
+<p class="about">
+
+      Highly motivated and detail‑oriented Cyber Security Analyst with hands‑on experience in network security auditing,
+
+      incident response, penetration testing, and vulnerability assessment. Skilled in leveraging AWS services (IAM, EC2, S3, VPC, CloudFront) for secure, scalable deployments with CI/CD. Certified AWS Cloud Practitioner and CEH v12.
+</p>
+<div class="actions">
+<a class="btn" href="#projects">See Projects</a>
+<a class="btn ghost" href="#contact">Hire Me</a>
+</div>
+</div>
+</main>
+<section id="about" class="section wrap">
+<h2>About</h2>
+<p>I focus on practical security—threat analysis, risk mitigation, cloud hardening—and automation to keep delivery fast and safe.</p>
+</section>
+<section id="skills" class="section wrap">
+<h2>Skills</h2>
+<div class="grid skills">
+<div class="card">
+<h3>Security</h3>
+<ul class="tight">
+<li>Network Security Auditing</li><li>Incident Response</li>
+<li>Penetration Testing</li><li>Vulnerability Assessment</li>
+<li>Security Policy Development</li>
+</ul>
+</div>
+<div class="card">
+<h3>AWS & Cloud</h3>
+<ul class="tight">
+<li>IAM, VPC, EC2, S3, RDS, CloudFront</li>
+<li>CI/CD (CodePipeline, CodeBuild, CodeDeploy)</li>
+<li>Static hosting on S3 + CDN</li>
+<li>Cloud infrastructure hardening</li>
+</ul>
+</div>
+<div class="card">
+<h3>Core Tech</h3>
+<ul class="tight">
+<li>Python</li><li>Linux</li><li>Docker</li><li>Git / GitHub</li><li>VS Code</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="certs" class="section wrap">
+<h2>Certifications</h2>
+<ul class="chips">
+<li class="chip">AWS Certified Cloud Practitioner</li>
+<li class="chip">CEH v12 (Certified Ethical Hacker)</li>
+</ul>
+</section>
+<section id="experience" class="section wrap">
+<h2>Experience</h2>
+<div class="grid cards">
+<article class="card">
+<h3>Trainee Programmer — Yash Technologies</h3>
+<p class="meta">Team Size: 6 • Tools: VS Code, GitHub</p>
+<p>Worked on secure builds with emphasis on code quality, version control, and CI/CD basics.</p>
+</article>
+<article class="card">
+<h3>Cyber Security Intern — Cummins India Ltd.</h3>
+<p>Supported vulnerability assessments, traffic analysis, and remediation documentation to strengthen posture.</p>
+</article>
+</div>
+</section>
+<section id="projects" class="section wrap">
+<h2>Projects</h2>
+<div class="grid cards">
+<article class="card">
+<h3>Fitness Tracker — HTML/CSS + AWS CI/CD</h3>
+<ul class="tight">
+<li>Daily logs for workouts, steps, water, and calories</li>
+<li>Weekly summary & progress bars</li>
+<li>Responsive, semantic, framework‑free UI</li>
+</ul>
+<p class="meta">HTML5, CSS3, Vanilla JS • S3 + CloudFront • CodePipeline → CodeBuild → S3 → Invalidation</p>
+<div class="tags"><span>HTML</span><span>CSS</span><span>JS</span><span>AWS</span><span>CI/CD</span></div>
+</article>
+<article class="card">
+<h3>Vision‑Based Mosquito Species Classification</h3>
+<p>Deep‑learning classifier using CNNs to distinguish mosquito species from images.</p>
+<div class="tags"><span>Python</span><span>DL</span><span>CNN</span></div>
+</article>
+</div>
+</section>
+<section id="education" class="section wrap">
+<h2>Education</h2>
+<p><strong>B.Tech (Computer)</strong> — Vishwakarma University</p>
+</section>
+<section id="contact" class="section contact wrap">
+<h2>Contact</h2>
+<div class="contact-grid">
+<a class="contact-item" href="mailto:jadhav.shivraj13@gmail.com">jadhav.shivraj13@gmail.com</a>
+<a class="contact-item" href="tel:+918956540312">+91 89565 40312</a>
+<a class="contact-item" target="_blank" rel="noopener" href="https://www.linkedin.com/in/shivraj-jadhav-b23129229/">LinkedIn</a>
+<!-- Add GitHub when ready -->
+<!-- <a class="contact-item" target="_blank" rel="noopener" href="https://github.com/YOUR_GITHUB">GitHub</a> -->
+</div>
+</section>
+<footer class="footer">
+<p>© <span id="year"></span> Shivraj Kashinath Jadhav</p>
+</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
+ 
