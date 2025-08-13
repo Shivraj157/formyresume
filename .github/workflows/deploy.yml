@@ -32,6 +32,8 @@ jobs:
 
             style.css
 
+            assets/**
+
   deploy:
 
     needs: build
